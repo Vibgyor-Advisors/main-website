@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vibgyor Advisors</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/phone.css" media="screen and (max-width: 900px)" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link data-require="fontawesome@5.5.0" data-semver="5.5.0" rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+    
+    
+<style>
+    h1{
+        text-align: center;
+        margin:5%;
+
+    }
+    h4{
+        text-align:center;
+    }
+    .flip-card{
+            margin:5%;
+        }
+
+  
+    
+        .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.card-contents{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+ padding:4%;
+ font-weight: 600;
+  color:aliceblue;
+}
+
+.flip-card-back {
+    padding:8%;
+  
+  color: white;
+  transform: rotateY(180deg);
+}
+@media (max-width:720px) {
+     .flip-card{
+         margin-right:10%;
+         margin-left:10%
+     }
+}
+@media (max-width:420px) {
+  .flip-card{
+      margin-left:6%;
+      margin-top:4%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="responsive-bar">
+        <div class="logo">
+          <img src="image/main.png" alt="logo" />
+        </div>
+        
+        <div class="menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+  
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="image/main.png" alt="logo" /></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Values</a></li>
+        <li><a href="menu.html">Services</a></li>
+        <li><a href="index.html#contactus">Careers</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+     
+    </nav>
+    <h1>Services</h1>
+    <div class="container">
+        <!-- Card deck -->
+        <div class="card-deck row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- Card -->
+                <div class="flip-card ">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="background-color:rgb(223, 28, 70);">
+                        <div class="card-contents">
+                            <img src="image/services/Financial distribution.png" alt="Avatar" style="width:100px;height:100px;border-radius:50%;">
+                            <h3>Financial Management System</h3>
+                        </div>
+                       
+                      </div>
+                      <div class="flip-card-back" style="background-color: #2980b9;">
+                        <ul style="list-style-type:disc">
+                            <li>
+                                <p class="cardp">Mutual Funds</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Equity Broking</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Structured Products</p>
+                            </li>
+                            <li>
+                                <p class="cardp">PMS</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Life & Vehicle Insurance</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Personal & Business Loans</p>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- Card -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="background-color:rgb(4, 85, 58);">
+                        <div class="card-contents">
+                            <img src="image/services/Investment banking.png" alt="Avatar" style="width:100px;height:100px;border-radius:50%;">
+                            <h3>Distribution of Financial Services</h3>
+                        </div>
+                       
+                      </div>
+                      <div class="flip-card-back" style="background-color:rgb(228, 128, 145);">
+                        <ul style="list-style-type:disc">
+                            <li>
+                            Investment Banking
+                            </li>
+                            <li>
+                                Start Ups
+                            </li>
+                            <li>
+                                Liability Side Services
+                            </li>
+                            <li>
+                                Corporate Advisory
+                            </li>
+                            <li>
+                                Mergers and Acquisitions
+                            </li>
+                            <li>
+                                Asset Sale
+                            </li>
+                            <li>
+                                Brand Acquisition
+                            </li>
+                            <li>
+                                Project Advisory
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- Card -->
+                <div class="flip-card ">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="background-color:rgb(59, 19, 124);">
+                        <div class="card-contents">
+                            <img src="image/services/Wealth management services.jpg" alt="Avatar" style="width:100px;height:100px;border-radius:50%;">
+                            <h3>Wealth Management System</h3>
+                        </div>
+                       
+                      </div>
+                      <div class="flip-card-back" style="background-color:rgb(0, 255, 42);">
+                        <ul style="list-style-type:disc">
+                            <li>
+                                Equity Advisory Services
+                            </li>
+                            <li>
+                               Option Strategies
+                            </li>
+                            <li>
+                                Trading Portfolios
+                            </li>
+                            <li>
+                                Portfolio Construction and Evaluation
+                            </li>
+                            <li>
+                                Research and Industry Analysis
+                            </li>
+                            <li>
+                                Real Estate
+                            </li>
+                            <li>
+                            Debt Investments and Lending
+                            </li>
+                            <li>
+                                Project Investments
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- Card -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="background-color:rgb(30, 168, 161);">
+                        <div class="card-contents">
+                            <img src="image/services/Investor relations.png" alt="Avatar" style="width:100px;height:100px;border-radius:50%;">
+                            <h3>Investor Relations</h3>
+                        </div>
+                       
+                      </div>
+                      <div class="flip-card-back" style="background-color:rgb(228, 128, 145);">
+                        <ul style="list-style-type:disc">
+                            <li>
+                                <p class="cardp">Mutual Funds</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Equity Broking</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Structured Products</p>
+                            </li>
+                            <li>
+                                <p class="cardp">PMS</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Life & Vehicle Insurance</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Personal & Business Loans</p>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- Card -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="background-color:orangered;">
+                        <div class="card-contents">
+                            <img src="image/services/Trading and proprietory investments.png" alt="Avatar" style="width:100px;height:100px;border-radius:50%;">
+                            <h3>Trading and Proprietary Investment</h3>
+                        </div>
+                       
+                      </div>
+                      <div class="flip-card-back" style="background-color: #2980b9;">
+                        <ul style="list-style-type:disc">
+                            <li>
+                                <p class="cardp">Mutual Funds</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Equity Broking</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Structured Products</p>
+                            </li>
+                            <li>
+                                <p class="cardp">PMS</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Life & Vehicle Insurance</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Personal & Business Loans</p>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- Card -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" style="background-color:rgb(196, 18, 107);">
+                        <div class="card-contents">
+                            <img src="image/services/Real estate.png" alt="Avatar" style="width:100px;height:100px;border-radius:50%;">
+                            <h3>Real Estate</h3>
+                        </div>
+                       
+                      </div>
+                      <div class="flip-card-back" style="background-color:yellowgreen;">
+                        <ul style="list-style-type:disc">
+                            <li>
+                                <p class="cardp">Mutual Funds</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Equity Broking</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Structured Products</p>
+                            </li>
+                            <li>
+                                <p class="cardp">PMS</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Life & Vehicle Insurance</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Personal & Business Loans</p>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card -->
+            </div>
+            
+        </div>
+        <!-- Card deck -->
+    </div>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <h6>Locate Us</h6>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i>&emsp;Vibgyor Advicorp Private Limited, 117, Swastik Disa Corporate Park, Opp Shreyas Cinema, LBS Marg, Ghatkopar (W), Mumbai 400086.</li>
+                        <li>
+                            <div class="map"> </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <h6>Connect Us</h6>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i>&emsp;info@vibgyoradvisions.com</li>
+                        <li><i class="fas fa-phone"></i>&emsp;9324361956</li>
+                        <li><i class="fas fa-tty"></i>&emsp;022-79615327</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <iframe allowfullscreen="" height="200" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.107039611577!2d72.9252541!3d19.128406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x13327f48a2d2f09f!2sVibgyor%20Advisors!5e0!3m2!1sen!2sin!4v1618731120950!5m2!1sen!2sin"
+                        style="border:0;" width="350"></iframe>
+
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text"> Division of Vibgyor Advicorpr PVT Limited &copy; 2019
+
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                      <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a class="dribbble" href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+                    </ul>
+                  </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/nav.js"></script>
+</body> 
+</html>
+   
