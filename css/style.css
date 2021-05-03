@@ -851,7 +851,7 @@ footer {
 }
 
 .site-footer h6 {
-    color: blue;
+    color:rgb(223, 28, 70);
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 5px;
@@ -873,7 +873,7 @@ footer {
 }
 
 .footer-links li i {
-    color: blue;
+    color:rgb(223, 28, 70);
 }
 
 .footer-links li {
