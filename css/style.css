@@ -320,12 +320,13 @@ nav.black>ul>li>a:hover {
 
 .vertical {
     /* margin-bottom: 100px; */
-    border-left: 6px solid #99a0d9;
-    /* height: 200px; */
+    border-left: 6px solid rgb(157, 195, 255);
+    height: 203px;
     position: absolute;
     left: 70%;
-    /* z-index: -2; */
-    margin-top: 20px;
+    z-index: -2;
+    margin-top: 80px;
+    border-radius: 11px;
 }
 
 .vertical2 {
