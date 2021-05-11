@@ -192,6 +192,8 @@ footer {
     font-family: 'Bree Serif', serif;
     font-size: 26px;
     padding: 12px;
+    margin-top: 2rem;
+    height: 100%;
 }
 
 .h-secondary {
