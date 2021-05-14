@@ -252,7 +252,7 @@ nav.black>ul>li>a:hover {
     padding: 5px 200px;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    /* height: 350px; */
 }
 
 #home::before {
@@ -349,6 +349,12 @@ nav.black>ul>li>a:hover {
     margin-top: 10px;
 }
 
+.atag {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
 
 /*Image*/
 
@@ -364,9 +370,11 @@ nav.black>ul>li>a:hover {
 .Vissionhead {
     margin-top: 22px;
     font-family: 'calibri', calibri;
+    font-weight: bolder;
     font-size: 2.5rem;
     padding: 12px;
     z-index: -2;
+    margin-left: 25px;
 }
 
 #Vission {
@@ -385,7 +393,7 @@ nav.black>ul>li>a:hover {
     font-family: 'calibri', calibri;
     font-size: 1.3rem;
     margin-right: 41%;
-    margin-left: 10px;
+    margin-left: 35px;
     z-index: -2;
 }
 
@@ -615,6 +623,7 @@ footer {
     font-family: 'calibri', calibri;
     font-size: 3rem;
     padding: 12px;
+    font-weight: bolder;
 }
 
 .h-secondary {
