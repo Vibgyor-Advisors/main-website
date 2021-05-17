@@ -181,6 +181,29 @@
     </footer>
     <script src="js/nav.js"></script>
     <script src="serviceWorker.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_SbKT5LptiHMO8fM-kQxKuV1ABozxSzc",
+    authDomain: "vibgyor-main.firebaseapp.com",
+    projectId: "vibgyor-main",
+    storageBucket: "vibgyor-main.appspot.com",
+    messagingSenderId: "410439599487",
+    appId: "1:410439599487:web:465308b7a2c2c0eb7d864a",
+    measurementId: "G-EYT9EJZ91C"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 
 </html>
