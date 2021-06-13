@@ -87,10 +87,11 @@ html {
 .responsive-bar {
     display: none;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 nav {
     font-weight: 500;
-    font-family:Montesserat;
+    font-family: Montesserat;
     width: 100%;
     position: relative;
     z-index: 999;
@@ -347,6 +348,11 @@ nav.black>ul>li>a:hover {
     left: 70%;
     /* z-index: -2; */
     margin-top: 10px;
+}
+
+#logoid {
+    height: 10rem;
+    width: 10rem;
 }
 
 .atag {
