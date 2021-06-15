@@ -158,6 +158,39 @@ nav.black>ul>li>a:hover {
     color: #262626;
 }
 
+#sub {
+    background-color: #fff;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: black;
+    animation: myanimation 10s infinite;
+    font-weight: 900;
+    font-family: 'Bree Serif', serif;
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: rgb(232, 185, 236);
+    }
+    25% {
+        background-color: rgb(229, 229, 190);
+    }
+    50% {
+        background-color: rgb(103, 175, 103);
+    }
+    75% {
+        background-color: rgb(233, 126, 126);
+    }
+    100% {
+        background-color: rgb(133, 233, 240);
+    }
+}
+
+#sub:hover {
+    background-color: #000;
+    color: rgb(17, 16, 16);
+}
+
 .abstract {
     display: none;
 }
