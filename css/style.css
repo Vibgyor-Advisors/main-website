@@ -3,6 +3,8 @@
 * {
     margin: 0px;
     padding: .1px;
+    font-family: 'calibri', calibri;
+    /* font-weight: bold; */
 }
 
 html {
@@ -90,8 +92,8 @@ html {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 nav {
-    font-weight: 500;
-    font-family: Montesserat;
+    font-weight: 900;
+    /* font-family: Montesserat; */
     width: 100%;
     position: relative;
     z-index: 999;
@@ -193,6 +195,10 @@ nav.black>ul>li>a:hover {
 
 .abstract {
     display: none;
+}
+
+.abstract a {
+    font-weight: 900;
 }
 
 @media(max-width:768px) {
@@ -490,41 +496,6 @@ nav.black>ul>li>a:hover {
     height: 80px;
 }
 
-#values {
-    display: flex;
-}
-    .fade-in-text {
-        display: inline-block;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 150px;
-        color: black;
-        animation: fadeIn linear 5s;
-        -webkit-animation: fadeIn linear 5s;
-        -moz-animation: fadeIn linear 5s;
-        -o-animation: fadeIn linear 5s;
-        -ms-animation: fadeIn linear 5s;
-      }
-      
-      @keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-      
-      @-moz-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-      
-      @-webkit-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-      }
-      
-      @-o-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-}
-
 
 /* contact Section */
 
@@ -537,7 +508,8 @@ nav.black>ul>li>a:hover {
 #contact::before {
     content: "";
     position: absolute;
-    background: url('../image/contact.jpg') no-repeat center center/cover;
+    /* background: url('../image/contact.jpg') no-repeat center center/cover; */
+    background-color: #c0e4f1;
     height: 100%;
     width: 100%;
     z-index: -2;
@@ -566,7 +538,7 @@ nav.black>ul>li>a:hover {
 
 #contact-box label {
     font-size: 1.3rem;
-    font-family: 'Bree Serif', serif;
+    /* font-family: 'Bree Serif', serif; */
 }
 
 
@@ -612,7 +584,7 @@ nav.black>ul>li>a:hover {
 
 #login-box label {
     font-size: 1.3rem;
-    font-family: 'Bree Serif', serif;
+    /* font-family: 'Bree Serif', serif; */
 }
 
 #imglogin {
@@ -792,6 +764,7 @@ footer {
     background-color: white;
     color: black;
     border: 2px solid #171c24;
+    font-weight: 900;
 }
 
 .button5:hover {
