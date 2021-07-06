@@ -15,6 +15,103 @@
     <link data-require="fontawesome@5.5.0" data-semver="5.5.0" rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        
+        h4 {
+            text-align: center;
+        }
+        
+        .flip-card {
+            margin: 5%;
+            border-radius: 50px;
+        }
+        
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            border-radius: 50px;
+        }
+        
+        .card-contents {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50px;
+        }
+        
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 50px;
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+            border-radius: 50px;
+        }
+        
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 50px;
+        }
+        
+        .flip-card-front {
+            padding: 4%;
+            font-weight: 600;
+            color: aliceblue;
+            border-radius: 50px;
+        }
+        
+        .flip-card-back {
+            padding: 8%;
+            color: white;
+            transform: rotateY(180deg);
+            border-radius: 50px;
+        }
+        
+        .cardp {
+            /* margin: -2px; */
+            font-weight: bolder;
+            color: black;
+        }
+        
+        .cardplong {
+            margin: -2px;
+            font-weight: bolder;
+            color: black;
+        }
+        
+        @media (max-width:985px) {
+            .flip-card {
+                margin-right: 10%;
+                margin-left: 10%;
+                width: 300px;
+                height: 300px;
+            }
+        }
+        
+        @media (max-width:420px) {
+            .flip-card {
+                margin-left: 6%;
+                margin-top: 4%;
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -69,7 +166,177 @@
 
         </selection>
     </div>
-    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="flip-card ">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-color:#136da5;">
+                        <div class="card-contents">
+                            <img src="image/values/integrity.jpg" alt="Avatar" style="width:120px;height:100px;border-radius:50%;">
+                            <h3>Integrity</h3>
+                        </div>
+
+                    </div>
+                    <div class="flip-card-back" style="background-color:#85c6ff;">
+                        <ul style="list-style-type:disc; color: black;">
+                            <li>
+                                <p class="cardp">We are fair and honest in our conduct.</p>
+                            </li>
+                            <li>
+                                <p class="cardp">We deal all our duties utmost ethically.</p>
+                            </li>
+                            <li>
+                                <p class="cardp">We conduct all deals transparently thus aiming to provide better service to our customers.</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-color:#f74260">
+                        <div class="card-contents">
+                            <img src="image/values/creativity.png" alt="Avatar" style="width:140px;height:100px;border-radius:50%;">
+                            <h3>Creativity</h3>
+                        </div>
+
+                    </div>
+                    <div class="flip-card-back" style="background-color:#ebc0c0;">
+                        <ul style="list-style-type:disc; color: black;">
+                            <li>
+                                <p class="cardplong">We create an environment where employees can think big and have fun.</p>
+                            </li>
+                            <li>
+                                <p class="cardplong">We work with our minds afresh that brings out new and innovative solutions. </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="flip-card ">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-color:#136da5;">
+                        <div class="card-contents">
+                            <img src="image/values/trust.jpg" alt="Avatar" style="width:120px;height:100px;border-radius:50%;">
+                            <h3>Trust</h3>
+                        </div>
+
+                    </div>
+                    <div class="flip-card-back" style="background-color:#85c6ff;">
+                        <ul style="list-style-type:disc; color: black;">
+                            <li>
+                                <p class="cardp">Our loyalty towards our clients are paramount.</p>
+                            </li>
+                            <li>
+                                <p class="cardp">We affirm that our honesty and dedication know no bounds.</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-color:#f74260">
+                        <div class="card-contents">
+                            <img src="image/values/dedication.jpg" alt="Avatar" style="width:120px;height:100px;border-radius:50%;">
+                            <h3>Dedication</h3>
+                        </div>
+
+                    </div>
+                    <div class="flip-card-back" style="background-color:#ebc0c0;">
+                        <ul style="list-style-type:disc; color: black;">
+                            <br>
+                            <br>
+
+                            <li>
+                                <p class="cardp">Our passion for work helps us to put consistent efforts.</p>
+                            </li>
+                            <li>
+                                <p class="cardp">Our dedicated efforts will surely bring out the best solution.</p>
+                            </li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-color:#136da5;">
+                        <div class="card-contents">
+                            <img src="image/values/solution.jpg" alt="Avatar" style="width:120px;height:100px;border-radius:50%;">
+                            <h3>Solution Based Approach</h3>
+                        </div>
+
+                    </div>
+                    <div class="flip-card-back" style="background-color:#85c6ff;">
+                        <ul style="list-style-type:disc; color: black;">
+                            <br>
+
+                            <li>
+                                <p class="cardp">We understand our client's requirement and direct our efforts in fulfilling them.</p>
+                            </li>
+                            <li>
+                                <p class="cardp">We assure to give our best to find the proper solution.</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Card -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-color:#f74260">
+                        <div class="card-contents">
+                            <img src="image/values/clientcentric.jpg " alt="Avatar" style="width:120px;height:100px;border-radius:50%; ">
+                            <h3>Client Centric Approach</h3>
+                        </div>
+
+                    </div>
+                    <div class="flip-card-back " style="background-color:#ebc0c0; ">
+                        <ul style="list-style-type:disc; color: black; ">
+                            <br>
+                            <br>
+                            <li>
+                                <p class="cardp ">We believe in putting our clients as out topmost priority in every situation.</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+        </div>
+
+    </div>
+    <!-- Card deck -->
+    
+</div>
+
+    <!-- <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
         <div class="carousel-indicators">
             <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
                 data-bs-target="#carouselExampleCaptions" type="button"></button>
@@ -122,7 +389,9 @@
             <span aria-hidden="true" class="carousel-control-next-icon"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
+
+
 
 
     <footer class="site-footer">
