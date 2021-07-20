@@ -497,6 +497,7 @@ nav.black>ul>li>a:hover {
 }
 
 
+
 /* contact Section */
 
 #contact {
@@ -561,10 +562,13 @@ nav.black>ul>li>a:hover {
 }
 
 #login-box {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
     padding-bottom: 34px;
+    padding-left: 200px;
+    display:block;
+    
 }
 
 #login-box input,
@@ -580,7 +584,7 @@ nav.black>ul>li>a:hover {
 
 #login-box form {
     width: 50%;
-}
+} 
 
 #login-box label {
     font-size: 1.3rem;
