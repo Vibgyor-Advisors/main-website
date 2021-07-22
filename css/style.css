@@ -1,9 +1,11 @@
 /* reset css */
 
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap');
 * {
     margin: 0px;
     padding: .1px;
-    font-family: 'calibri', calibri;
+    font-family: 'Poppins', sans-serif;
     /* font-weight: bold; */
 }
 
@@ -103,7 +105,7 @@ nav {
     padding: 10px 100px;
     box-sizing: border-box;
     transition: .5s;
-    background: #171c24;
+    background: #11caa2;
 }
 
 nav.black {
@@ -139,7 +141,7 @@ nav>ul>li {
 
 nav>ul>li>a:hover {
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);*/
 }
 
 nav>ul>li>a {
