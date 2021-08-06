@@ -20,6 +20,10 @@ html {
     --navheight: 224px;
 }
 
+/*.background {
+    background-image: linear-gradient(black,blue);
+} */
+
 
 /* navigation bar */
 
@@ -88,6 +92,15 @@ html {
     background-color: white;
 } */
 
+section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+
+    background-image: linear-gradient(60deg, black , rgb(20, 2, 70),black);
+    
+}
+
 .responsive-bar {
     display: none;
 }
@@ -95,17 +108,17 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 nav {
     font-weight: 900;
-    /* font-family: Montesserat; */
+    font-family: Montesserat; 
     width: 100%;
     position: relative;
     z-index: 999;
     top: 0;
     left: 0;
-    height: 100px;
+    height:100px;
     padding: 10px 100px;
     box-sizing: border-box;
     transition: .5s;
-    background: #11caa2;
+    background: linear-gradient(60deg, black , rgb(20, 2, 70),black);
 }
 
 nav.black {
@@ -140,7 +153,7 @@ nav>ul>li {
 }
 
 nav>ul>li>a:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(100, 84, 161);
     /*background-color: rgb(255, 255, 255);*/
 }
 
@@ -296,12 +309,16 @@ nav.black>ul>li>a:hover {
     padding: 5px 200px;
     justify-content: center;
     align-items: center;
+    /*background: linear-gradient(black,rgb(13, 174, 238));*/
+    
     /* height: 350px; */
 }
 
 #home::before {
     content: "";
     position: absolute;
+    /*background: linear-gradient(black,rgb(13, 174, 238));*/
+    /*background-blend-mode: lighten;*/
     /* https://image.freepik.com/free-photo/september-1-wooden-calendar-among-supplies-study-blue-background_79087-1000.jpg */
     /* background: url('../image/woodencalendar.jpg') no-repeat center center/cover; */
     top: 0px;
@@ -312,16 +329,17 @@ nav.black>ul>li>a:hover {
 }
 
 #home h1 {
-    color: rgb(3, 3, 3);
+    
+    color: rgb(8, 8, 8);
     text-align: center;
-    font-family: 'calibri', calibri;
+    font-family: montserrat;
 }
 
 #home p {
-    color: rgb(0, 0, 0);
+    color: rgb(8, 8, 8);
     text-align: center;
     font-size: 1.3rem;
-    font-family: 'calibri', calibri;
+    font-family: roboto;
 }
 
 
@@ -356,7 +374,7 @@ nav.black>ul>li>a:hover {
 }
 
 #services p {
-    font-family: 'calibri', calibri;
+    font-family: roboto;
 }
 
 
@@ -417,8 +435,9 @@ nav.black>ul>li>a:hover {
 /* Vission Section */
 
 .Vissionhead {
+    
     margin-top: 22px;
-    font-family: 'calibri', calibri;
+    font-family: montserrat;
     font-weight: bolder;
     font-size: 2.5rem;
     padding: 12px;
@@ -427,6 +446,7 @@ nav.black>ul>li>a:hover {
 }
 
 #Vission {
+    background: linear-gradient(black,rgb(13, 174, 238));
     display: block;
     /* display: flex;
     flex-direction: column; */
@@ -439,6 +459,7 @@ nav.black>ul>li>a:hover {
 }
 
 #Vissionp {
+    /*background: linear-gradient(black,rgb(13, 174, 238)); */
     font-family: 'calibri', calibri;
     font-size: 1.3rem;
     margin-right: 41%;
@@ -514,7 +535,7 @@ nav.black>ul>li>a:hover {
     content: "";
     position: absolute;
     /* background: url('../image/contact.jpg') no-repeat center center/cover; */
-    background-color: #c0e4f1;
+    background-color:rgb(229, 145, 145);
     height: 100%;
     width: 100%;
     z-index: -2;
@@ -543,7 +564,7 @@ nav.black>ul>li>a:hover {
 
 #contact-box label {
     font-size: 1.3rem;
-    /* font-family: 'Bree Serif', serif; */
+    font-family: montserrat; 
 }
 
 
